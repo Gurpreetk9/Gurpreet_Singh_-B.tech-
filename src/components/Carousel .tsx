@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import "./Carousel.scss";
 import Dots from "./Dots";
 
-const maxVisibile = 3;
 const imgArr = [
   {
     src: "https://images.pexels.com/photos/211760/pexels-photo-211760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",

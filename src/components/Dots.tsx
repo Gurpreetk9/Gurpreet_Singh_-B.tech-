@@ -1,4 +1,5 @@
-import { Dot, RectangleHorizontal } from "lucide-react";
+import { Dot } from "lucide-react";
+import { TbRectangleFilled } from "react-icons/tb";
 
 type props = {
   activeIndex: number;

@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 import "./Navbar.scss";
 import { menuItemsArray, moreItemsArray } from "../MenuItems";
 import { useState, useEffect } from "react";
-import { Search } from "lucide-react";
-import { CiSearch } from "react-icons/ci";
 
 function Navbar() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth as number);
