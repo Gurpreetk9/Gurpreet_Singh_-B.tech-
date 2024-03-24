@@ -1,0 +1,144 @@
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imgDiv {
+  width: 30%;
+  height: 60%;
+
+  // width: 100%;
+  // height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 28rem;
+  border-radius: 5%;
+  transform: translate(-50%, -50%);
+  transition: box-shadow 1s, height 250ms, width 250ms, left 1s, margin-top 1s,
+    line-height 250ms, background-color 1s;
+
+  cursor: pointer;
+
+  .imageTitle {
+    position: absolute;
+    bottom: -0.3%;
+    background-color: #212121;
+    width: 100%;
+    height: 15%;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    // border-radius: 18px;
+    opacity: 0.7;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.carouselImg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  // object-fit: cover;
+  border-radius: 5%;
+}
+
+.level-2 {
+  box-shadow: -0.1em 0.1em 0.2em #212121;
+  left: 15%;
+  width: 10%;
+  height: 8rem;
+}
+.level-1 {
+  box-shadow: -0.2em 0.2em 0.4em #212121;
+  left: 30%;
+  width: 20%;
+  height: 12rem;
+}
+.level1 {
+  box-shadow: 0.2em 0.2em 0.4em #212121;
+  left: 70%;
+  width: 20%;
+  height: 12rem;
+}
+.level2 {
+  box-shadow: 0.1em 0.1em 0.2em #212121;
+  left: 85%;
+  width: 10%;
+  height: 8rem;
+}
+.level0 {
+  box-shadow: 0 0.4em 0.8em #212121;
+  left: 50%;
+  height: 20rem;
+}
+
+.level-2,
+.level2 {
+  z-index: 0;
+}
+
+.level-1,
+.level1 {
+  z-index: 1;
+}
+
+.level0 {
+  z-index: 2;
+}
+
+.dotArrow {
+  position: absolute;
+  top: 38rem;
+  // bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.allDots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  width: 5%;
+  color: gray;
+  transition: all 500ms;
+
+  :hover {
+    color: darkgray;
+  }
+}
+
+.activeDot {
+  color: skyblue;
+}
+
+.arrows {
+  :hover {
+    color: gray;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1000px) {
+  .level0,
+  .level-1,
+  .level-2,
+  .level1,
+  .level2 {
+    left: 50%;
+    height: 20rem;
+    width: 80%;
+    top: 27rem;
+  }
+  .dotArrow {
+    top: 38rem;
+  }
+}
